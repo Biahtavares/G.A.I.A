@@ -1,0 +1,107 @@
+body {
+  background: url('https://cdn.pixabay.com/photo/2018/11/11/09/30/nature-3808354_1280.jpg') no-repeat center center/cover;
+  font-family: 'Outfit', sans-serif;
+  background-color: #2f4f4f;
+  color: #fff;
+  margin: 0;
+}
+
+header {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.navbar ul li a:hover {
+  color: #ccc;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+  background-color: #fff;
+  color: #222;
+  border-radius: 1rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  padding: 1rem;
+  background-color: #2f8f83;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #26766e;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1f3d3b;
+  color: white;
+}
+
+.footer img {
+  width: 75px;
+  height: 50px;
+}
