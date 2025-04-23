@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G.A.I.A</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <container class="navbar">
+      <img src="logo.png" alt="Logo G.A.I.A" class="logo">
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </container>
+    <h1>G.A.I.A </h1>
+    <h2>Gestão Ambiental Inteligente e Acessivel</h2>
+    <p>Registre aqui os dados dos resíduos recicláveis entregues</p>
+  </header>
+
+  <section class="container">
+    <h2>Formulário de Registro</h2>
+    <form id="form-reciclagem">
+      <label for="quantidade">Quantidade do resíduo (Kg)</label>
+      <input type="number" id="quantidade" name="quantidade" min="0" step="0.01" required>
+
+      <label for="tipo">Tipo de resíduo</label>
+      <select id="tipo" name="tipo" required>
+        <option value="">Selecione</option>
+        <option value="Alumínio">Alumínio</option>
+        <option value="Vidro">Vidro</option>
+        <option value="Pano">Pano</option>
+        <option value="PET">PET</option>
+      </select>
+
+      <label for="turma">Turma</label>
+      <input type="text" id="turma" name="turma" required>
+
+      <label for="matricula">Matrícula</label>
+      <input type="text" id="matricula" name="matricula" required>
+
+      <label for="curso">Curso</label>
+      <input type="text" id="curso" name="curso" required>
+
+      <label for="semestre">Semestre</label>
+      <input type="text" id="semestre" name="semestre" required>
+
+      <label for="turno">Turno</label>
+      <select id="turno" name="turno" required>
+        <option value="">Selecione</option>
+        <option value="Manhã">Manhã</option>
+        <option value="Tarde">Tarde</option>
+        <option value="Noite">Noite</option>
+      </select>
+
+      <label for="unidade">Unidade</label>
+      <select id="unidade" name="unidade" required>
+        <option value="">Selecione</option>
+        <option value="Unama Alcindo Cacela">Unama Alcindo Cacela</option>
+        <option value="Unama Ananindeua">Unama Ananindeua</option>
+        <option value="Unama Santarém">Unama Santarém</option>
+        <option value="Unama Marabá">Unama Marabá</option>
+      </select>
+
+      <button type="submit">Registrar</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Projeto de Reciclagem - Todos os direitos reservados</p>
+    <img src="grupo-ser-educacional-seeklogo.png" alt="Grupo Ser Educacional" class="footer-logo">
+  </footer>
+
+  <script>
+    const form = document.getElementById('form-reciclagem');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const dados = {
+        quantidade: form.quantidade.value,
+        tipo: form.tipo.value,
+        turma: form.turma.value,
+        matricula: form.matricula.value,
+        curso: form.curso.value,
+        semestre: form.semestre.value,
+        turno: form.turno.value,
+        unidade: form.unidade.value
+      };
+      console.log('Dados registrados:', dados);
+      alert("Registro salvo com sucesso!");
+      form.reset();
+    });
+  </script>
+</body>
+</html>
